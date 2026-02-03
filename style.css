@@ -6,9 +6,17 @@ body {
   display: none;
 }
 
+.ToDotitle{
+color:white;
+font-family: 'Times New Roman', Times, serif;
+font-weight:bold;
+font-size:40px;
+text-align: center;
+}
 
 .todo-item {
   font-family: "Segoe UI", Arial, sans-serif;
+  
 }
 
 .todo-text {
@@ -17,19 +25,21 @@ body {
 
 .todo-btn {
   font-family: "Segoe UI", Arial, sans-serif;
+  color: rgb(255, 255, 255);
 }
 
+
 .todo-btn-edit {
-  background-color: #16a34a;
+  background-color: #975ff0;
 }
 
 .todo-btn-delete {
-  background-color: #ef4444;
+  background-color: #ef44e6;
 }
 
-#p{
-    color:rgb(233, 241, 119);
-    font-family: 'Dancing Script', cursive;
+p{
+    color:rgb(231, 241, 84);
+    font-family: 'Times New Roman', Times, serif;
     font-weight:bold;
     font-size:30px;
 }
