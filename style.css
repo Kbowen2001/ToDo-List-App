@@ -13,36 +13,41 @@ body {
 
 .ToDotitle{
 color:#ef44e6;
-font-family: 'Times New Roman', Times, serif;
+font-family: didot, serif;
 font-weight:bold;
 font-size:40px;
 text-align: center;
 }
 
 .todo-item {
-  font-family: "Segoe UI", Arial, sans-serif;
+  font-family: didot, serif;
   
 }
 
 .add-btn{
     color:rgb(255, 255, 255);
-    background-color: #ef44e6;
-    border:solid .5px #f8f8f1;
-}
-.add-btn:hover{
+    font-weight:bold;
     background-color: #975ff0;
+    border:solid 2px #efe444;
+}
 
-    
+.add-btn:hover{
+    background-color: #571457;
+    cursor: pointer;
+}
+
+
 .todo-text {
-  color:white;
-  font-family: 'Times New Roman', Times, serif;
+  color:#ef44e6;
+  font-family: didot, serif;
   font-weight:bold;
   font-size:30px;
 }
 
 .todo-btn {
-  font-family: "Segoe UI", Arial, sans-serif;
-  color: rgb(255, 255, 255);
+  font-family: didot, serif;
+  font-weight: bold;
+  color: white;
 }
 
 
