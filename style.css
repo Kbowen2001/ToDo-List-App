@@ -27,11 +27,14 @@ text-align: center;
 .add-btn{
     color:rgb(255, 255, 255);
     background-color: #ef44e6;
-    border:solid 2px #f8f8f1;
+    border:solid .5px #f8f8f1;
 }
+.add-btn:hover{
+    background-color: #975ff0;
 
+    
 .todo-text {
-  color:#ef44e6;
+  color:white;
   font-family: 'Times New Roman', Times, serif;
   font-weight:bold;
   font-size:30px;
