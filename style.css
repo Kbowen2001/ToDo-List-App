@@ -7,7 +7,7 @@ body {
 }
 
 .div-holder{
-    background-color: rgb(171, 250, 213);
+    background-color: rgb(224, 202, 248);
 }
 
 
@@ -27,6 +27,7 @@ text-align: center;
 .add-btn{
     color:rgb(255, 255, 255);
     background-color: #ef44e6;
+    border:solid 2px #efe444;
 }
 
 .todo-text {
