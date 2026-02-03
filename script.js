@@ -11,7 +11,11 @@ const saveInd = document.getElementById("saveIndex");
 // Challenge: Try and using your addTaskButton with a "keydown" eventlistener
 // and create a way to use the enter key to submit a new list item.
 
-
+addTaskButton.addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    e.preventDefault(); 
+    addTaskButton.click(); 
+  }
 
 
 
