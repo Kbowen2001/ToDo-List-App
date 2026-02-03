@@ -55,10 +55,10 @@ function displayTodo() {
   }
   let htmlCode = "";
   todoArray.forEach((list, ind) => {
-    htmlCode += `<div class='flex mb-4 items-center'>
-          <p class='w-full text-white font-bold'>${list}</p>
-          <button onclick='edit(${ind})' class='flex-no-shrink p-2 ml-4 mr-2 rounded text-white text-grey bg-green-600'>Edit</button>
-          <button onclick='deleteTodo(${ind})' class='flex-no-shrink p-2 ml-2 rounded text-white bg-red-500'>Delete</button>
+      htmlCode += `<div class='todo-item flex mb-4 items-center'>
+        <p class='todo-text w-full text-white font-bold'>${list}</p>
+        <button onclick='edit(${ind})' class='todo-btn todo-btn-edit flex-no-shrink p-2 ml-4 mr-2 rounded text-white text-grey bg-green-600'>Edit</button>
+        <button onclick='deleteTodo(${ind})' class='todo-btn todo-btn-delete flex-no-shrink p-2 ml-2 rounded text-white bg-red-500'>Delete</button>
        </div>`;
   });
   listBox.innerHTML = htmlCode;
@@ -85,8 +85,8 @@ function edit(ind) {
   const todo = localStorage.getItem("todo");
   todoArray = JSON.parse(todo);
   text.value = todoArray[ind];
-  addTaskButton.style.display = "none";
-  saveTaskButton.style.display = "block";
+  addTaskButton.classList.add("hidden");
+  saveTaskButton.classList.remove("hidden");
 }
 
 
@@ -99,8 +99,8 @@ saveTaskButton.addEventListener("click", () => {
   todoArray = JSON.parse(todo);
   const id = saveInd.value;
   todoArray[id] = text.value.trim();
-  addTaskButton.style.display = "block";
-  saveTaskButton.style.display = "none";
+  addTaskButton.classList.remove("hidden");
+  saveTaskButton.classList.add("hidden");
   text.value = "";
   localStorage.setItem("todo", JSON.stringify(todoArray));
   displayTodo();

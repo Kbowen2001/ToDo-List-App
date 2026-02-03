@@ -2,3 +2,34 @@ body {
   background-color: rgb(187, 144, 243);
 }
 
+.hidden {
+  display: none;
+}
+
+/* Base styling you can change without new IDs */
+.todo-item {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.todo-text {
+  color: #ffffff;
+}
+
+.todo-btn {
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.todo-btn-edit {
+  background-color: #16a34a;
+}
+
+.todo-btn-delete {
+  background-color: #ef4444;
+}
+
+#p{
+    color:rgb(233, 241, 119);
+    font-family: 'Dancing Script', cursive;
+    font-weight:bold;
+    font-size:30px;
+}
