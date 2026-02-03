@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=GFS+Didot&display=swap");
+
 body {
   background-image: url("img/background.webp");
 }
@@ -13,14 +15,14 @@ body {
 
 .ToDotitle{
 color:#ef44e6;
-font-family: didot, serif;
+font-family: "GFS Didot", Didot, serif;
 font-weight:bold;
 font-size:40px;
 text-align: center;
 }
 
 .todo-item {
-  font-family: didot, serif;
+  font-family: "GFS Didot", Didot, serif;
   
 }
 
@@ -39,13 +41,13 @@ text-align: center;
 
 .todo-text {
   color:#ef44e6;
-  font-family: didot, serif;
+  font-family: "GFS Didot", Didot, serif;
   font-weight:bold;
   font-size:30px;
 }
 
 .todo-btn {
-  font-family: didot, serif;
+  font-family: "GFS Didot", Didot, serif;
   font-weight: bold;
   color: white;
 }
