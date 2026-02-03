@@ -12,21 +12,35 @@ addTaskButton.addEventListener("click", (e) => {
   e.preventDefault(); // This prevents the page from reloading.
   // start by setting a variable named todo to equal localstorage.getitem("todo")
   // Add code below this line
-
+  const todo = localStorage.getItem("todo");
   // check if todo is null, if it is set todoArray = []
   // else set todoArray to JSON.parse() your variable passed into the parse method.
+  if (todo === null) {
+    todoArray = [];
+  } else {
+    todoArray = JSON.parse(todo);
+  }
 
   // check if text.value is empty, alert that the input is empty and return
+  if (text.value.trim() === "") {
+    alert("Please enter a task.");
+    return;
+  }
 
   // now that you've parsed the value, push the text.value to the todoArray.
   // set the text.value to an empty string.
   // get the localstorage method and use the setItem and pass in todo
   // and pass in JSON.stringify(todoArray).
   // lastly call display todo method
+  todoArray.push(text.value.trim());
+  text.value = "";
+  localStorage.setItem("todo", JSON.stringify(todoArray));
+  displayTodo();
 });
 
 // Add code below this comment to do the following:
 // 1. when the page loads, call displayTodo() method
+window.addEventListener("load", displayTodo);
 
 // This method is already in place for you.
 function displayTodo() {
@@ -53,6 +67,11 @@ function deleteTodo(ind) {
   // use the todoArray and use the splice method on the ind and pass in 1 as well.
   // set the todo in local storage and use the JSON.stringify(todoArray)
   // call the display todo method
+  const todo = localStorage.getItem("todo");
+  todoArray = JSON.parse(todo);
+  todoArray.splice(ind, 1);
+  localStorage.setItem("todo", JSON.stringify(todoArray));
+  displayTodo();
 }
 
 function edit(ind) {
@@ -62,6 +81,12 @@ function edit(ind) {
   // assign the text.value to the array and get the index [ind].
   // set the addTaskButton display to none
   // set the saveTaskButton display to block
+  saveInd.value = ind;
+  const todo = localStorage.getItem("todo");
+  todoArray = JSON.parse(todo);
+  text.value = todoArray[ind];
+  addTaskButton.style.display = "none";
+  saveTaskButton.style.display = "block";
 }
 
 saveTaskButton.addEventListener("click", () => {
@@ -75,4 +100,13 @@ saveTaskButton.addEventListener("click", () => {
   // 3. set text value to empty
   // 4. and use the localstorage method setItem, pass in todo and stringify the array.
   // 5. display todo method called.
+  const todo = localStorage.getItem("todo");
+  todoArray = JSON.parse(todo);
+  const id = saveInd.value;
+  todoArray[id] = text.value.trim();
+  addTaskButton.style.display = "block";
+  saveTaskButton.style.display = "none";
+  text.value = "";
+  localStorage.setItem("todo", JSON.stringify(todoArray));
+  displayTodo();
 });
