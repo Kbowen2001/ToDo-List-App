@@ -1,12 +1,12 @@
 body {
-  background-color: rgb(187, 144, 243);
+  background-image: url("img/background.webp");
 }
 
 .hidden {
   display: none;
 }
 
-/* Base styling you can change without new IDs */
+
 .todo-item {
   font-family: "Segoe UI", Arial, sans-serif;
 }
