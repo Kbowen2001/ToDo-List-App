@@ -32,7 +32,7 @@ addTaskButton.addEventListener("click", (e) => {
 
 
   if (text.value.trim() === "") {
-    alert("Please enter a task.");
+    alert("Type something silly!");
     return;
   }
 
