@@ -41,7 +41,7 @@ addTaskButton.addEventListener("click", (e) => {
 
 
 
-window.addEventListener("load", displayTodo); 
+window.addEventListener("load", displayTodo);
 
 //to display list
 
