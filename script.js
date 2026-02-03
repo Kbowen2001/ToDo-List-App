@@ -5,8 +5,15 @@ const saveTaskButton = document.getElementById("save-todo-btn");
 const listBox = document.getElementById("listBox");
 const saveInd = document.getElementById("saveIndex");
 
+
+
+
 // Challenge: Try and using your addTaskButton with a "keydown" eventlistener
 // and create a way to use the enter key to submit a new list item.
+
+
+
+
 
 addTaskButton.addEventListener("click", (e) => {
   e.preventDefault(); 
@@ -56,7 +63,7 @@ function displayTodo() {
 }
 
 
-
+// Delete function
 
 function deleteTodo(ind) {
 
@@ -68,6 +75,7 @@ function deleteTodo(ind) {
 }
 
 
+//To edit  
 
 function edit(ind) {
  
@@ -79,6 +87,8 @@ function edit(ind) {
   saveTaskButton.style.display = "block";
 }
 
+
+//saves it to the list 
 
 
 saveTaskButton.addEventListener("click", () => {
