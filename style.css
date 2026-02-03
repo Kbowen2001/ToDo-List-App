@@ -34,9 +34,21 @@ text-align: center;
   
 }
 
+.save-btn{
+  color:rgb(255, 255, 255);
+  font-family: "GFS Didot", Didot, serif;
+  font-weight:bold;
+  background-color: #975ff0;
+}
+
 .add-btn:hover{
     background-color: #571457;
     cursor: pointer;
+}
+
+.save-btn:hover{
+  background-color: #571457;
+  cursor: pointer;
 }
 
 
