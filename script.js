@@ -32,6 +32,8 @@ addTaskButton.addEventListener("click", (e) => {
 });
 
 
+
+
 window.addEventListener("load", displayTodo);
 
 
@@ -53,6 +55,9 @@ function displayTodo() {
   listBox.innerHTML = htmlCode;
 }
 
+
+
+
 function deleteTodo(ind) {
 
   const todo = localStorage.getItem("todo");
@@ -61,6 +66,8 @@ function deleteTodo(ind) {
   localStorage.setItem("todo", JSON.stringify(todoArray));
   displayTodo();
 }
+
+
 
 function edit(ind) {
  
@@ -71,6 +78,8 @@ function edit(ind) {
   addTaskButton.style.display = "none";
   saveTaskButton.style.display = "block";
 }
+
+
 
 saveTaskButton.addEventListener("click", () => {
 
