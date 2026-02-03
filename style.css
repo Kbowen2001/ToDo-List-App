@@ -6,8 +6,13 @@ body {
   display: none;
 }
 
+.div-holder{
+    background-color: rgb(171, 250, 213);
+}
+
+
 .ToDotitle{
-color:white;
+color:#ef44e6;
 font-family: 'Times New Roman', Times, serif;
 font-weight:bold;
 font-size:40px;
@@ -19,8 +24,16 @@ text-align: center;
   
 }
 
+.add-btn{
+    color:rgb(255, 255, 255);
+    background-color: #ef44e6;
+}
+
 .todo-text {
-  color: #ffffff;
+  color:#ef44e6;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight:bold;
+  font-size:30px;
 }
 
 .todo-btn {
@@ -37,9 +50,3 @@ text-align: center;
   background-color: #ef44e6;
 }
 
-p{
-    color:rgb(231, 241, 84);
-    font-family: 'Times New Roman', Times, serif;
-    font-weight:bold;
-    font-size:30px;
-}
