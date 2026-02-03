@@ -28,6 +28,7 @@ text-align: center;
 
 .add-btn{
     color:rgb(255, 255, 255);
+    font-family: "GFS Didot", Didot, serif;
     font-weight:bold;
     background-color: #975ff0;
     border:solid 2px #efe444;
