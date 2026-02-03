@@ -6,10 +6,7 @@ const listBox = document.getElementById("listBox");
 const saveInd = document.getElementById("saveIndex");
 
 
-
-
-// Challenge: Try and using your addTaskButton with a "keydown" eventlistener
-// and create a way to use the enter key to submit a new list item.
+//adds to list when enter is pressed
 
 text.addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
@@ -48,8 +45,9 @@ addTaskButton.addEventListener("click", (e) => {
 
 window.addEventListener("load", displayTodo);
 
-//to display list
 
+
+//to display list
 
 function displayTodo() {
   let todo = localStorage.getItem("todo");
